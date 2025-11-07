@@ -9,4 +9,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('GrundkursTypescript');
+
+  theString = "Das ist ein String";
+  theNumber = 1234567890;
+  theBoolean = true;
+
+  theUndefined = undefined;
+  theNull = null;
+
+
 }
