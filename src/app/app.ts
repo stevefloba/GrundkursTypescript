@@ -10,12 +10,15 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('GrundkursTypescript');
 
-  theString = "Das ist ein String";
-  theNumber = 1234567890;
-  theBoolean = true;
+  theArray: (number | string)[] = [1,2];
 
-  theUndefined = undefined;
-  theNull = null;
+  constructor() {
+    this.theArray = [1,'6']
+    this.add(1,2);
+  }
 
+  add(a:number,b:number){
+    return a + b;
+  }
 
 }
